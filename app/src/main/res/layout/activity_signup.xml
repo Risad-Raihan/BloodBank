@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SignupActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="full_name"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittex"
+            android:textColor="#17202A"
+            android:nextFocusDown="@id/edit_text_email"
+            />
+
+
+        <EditText
+            android:id="@+id/edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittex"
+            android:textColor="#17202A"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@id/edit_text_password"
+            />
+
+
+        <EditText
+            android:id="@+id/edit_text_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittex"
+            android:textColor="#17202A"
+            android:inputType="textPassword"
+            android:nextFocusDown="@id/edit_text_phone"
+            />
+
+        <EditText
+            android:id="@+id/edit_text_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:hint="phone"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittex"
+            android:textColor="#17202A"
+            android:inputType="number"
+            android:maxLength="10"
+
+            />
+
+
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="register"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btnshape"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:gravity="center_horizontal"
+        android:text="Registration"
+        android:textAlignment="center"
+        android:textColor="#17202A"
+        android:textSize="50sp" />
+
+
+</RelativeLayout>
